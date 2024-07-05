@@ -1,0 +1,146 @@
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer_inner {
+    @extend .d_flex;
+    @extend .justify_content_between;
+    padding: 80px 0 60px 0;
+
+    .brand_inner {
+        @extend .d_flex_column;
+        max-width: 217px;
+        width: 100%;
+        gap: 24px;
+
+        .brand_label {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .subscriber {
+            h4 {
+                margin: 0 0 24px;
+            }
+
+            h6 {
+                margin: 0 0 16px;
+            }
+
+            .input_field {
+                position: absolute;
+
+                input {
+                    background-color: transparent;
+                    border: 1.5px solid #fff;
+                    max-height: 48px;
+                    width: 217px;
+                    height: 100%;
+                    border-radius: 4px;
+                    padding: 10px;
+                    color: #fff;
+                }
+
+                button {
+                    position: absolute;
+                    top: 7px;
+                    right: 12px;
+                    background: transparent;
+                    border: 0;
+                    padding: 0;
+                }
+            }
+
+            ;
+        }
+    }
+
+    .support_inner {
+        max-width: 175px;
+        width: 100%;
+
+        h3 {
+            margin: 0 0 24px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0 0 16px;
+            }
+        }
+    }
+
+    .account_inner {
+        max-width: 123px;
+        width: 100%;
+
+        h3 {
+            margin: 0 0 24px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0 0 16px;
+            }
+        }
+    }
+
+    .quick_link_inner {
+        max-width: 109px;
+        width: 100%;
+
+        h3 {
+            margin: 0 0 24px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0 0 16px;
+            }
+        }
+    }
+
+    .downloader_inner {
+        max-width: 198px;
+        width: 100%;
+
+        h3 {
+            margin: 0 0 24px;
+        }
+
+        h5 {
+            margin: 0 0 8px;
+            font-size: 10px;
+        }
+
+        .share_contanier {
+            @extend .d_flex;
+            @extend .justify_content_center;
+            gap: 8px;
+
+            .app_icon_inner {
+                @extend .d_flex_column;
+                gap: 12px;
+            }
+        }
+
+        .social_media {
+            @extend .d_flex;
+            @extend .justify_content_between;
+            margin: 24px 0 0;
+        }
+    }
+}

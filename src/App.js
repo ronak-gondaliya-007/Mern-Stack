@@ -1,10 +1,12 @@
-import './App.css';
-import { Header } from './views/header';
+import { Suspense } from "react";
+import PublicRoute from "./routes/PublicRouter";
 
 function App() {
   return (
     <div className="App">
-        <Header />
+      <Suspense fallback={'Loding...'}>
+        <PublicRoute />
+      </Suspense>
     </div>
   );
 }

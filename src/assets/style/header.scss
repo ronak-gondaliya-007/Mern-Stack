@@ -1,0 +1,66 @@
+.announcement {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+
+    .discount_bar {
+        @extend .d_flex;
+        @extend .align_items_center;
+        @extend .justify_content_center;
+        @extend .text_align_center;
+
+        div {
+            margin-left: 15px;
+            text-decoration: underline;
+            color: #fff;
+        }
+    }
+}
+
+header {
+    border-bottom: 1px solid #000;
+}
+
+.header_inner {
+    @extend .d_flex;
+    @extend .align_items_center;
+    @extend .justify_content_between;
+    padding: 39px 0 17px;
+
+    .brand_icon {
+        img {
+            max-width: 100px;
+            width: 100%;
+        }
+    }
+
+    .header_menu {
+        ul {
+            @extend .d_flex;
+            @extend .align_items_center;
+            gap: 48px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                @extend .d_flex;
+                @extend .align_items_center;
+                gap: 5px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+
+    .header_action {
+        @extend .d_flex;
+        @extend .align_items_center;
+        gap: 16px;
+        margin: 0;
+        padding: 0;
+    }
+}

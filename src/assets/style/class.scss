@@ -1,0 +1,28 @@
+.d_flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.align_items_center {
+    align-items: center;
+}
+
+.justify_content_between {
+    justify-content: space-between;
+}
+
+.justify_content_center {
+    justify-content: center;
+}
+
+.text_align_center {
+    text-align: center;
+}
+
+.d_flex_column {
+    @extend .d_flex;
+    flex-direction: column;
+}
