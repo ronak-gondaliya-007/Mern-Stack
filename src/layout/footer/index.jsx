@@ -7,6 +7,7 @@ import twitter from '../../assets/icon/twitter.svg'
 import instagram from '../../assets/icon/instagram.svg'
 import linkedin from '../../assets/icon/linkedin.svg'
 import send from '../../assets/icon/send.svg'
+import copyright from '../../assets/icon/copyright.svg'
 
 const FooterLayout = () => {
     return (
@@ -70,6 +71,10 @@ const FooterLayout = () => {
                             <img src={linkedin} alt="qrcode_icon" />
                         </div>
                     </div>
+                </div>
+                <div className="copyright">
+                    <img src={copyright} alt="qrcode_icon" />
+                    <h5>Copyright Rimel 2022. All right reserved</h5>
                 </div>
             </div>
         </footer>

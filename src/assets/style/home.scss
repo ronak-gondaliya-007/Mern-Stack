@@ -1,0 +1,43 @@
+.home_inner {
+    @extend .d_flex;
+    @extend .justify_content_center;
+
+    .hero_section {
+        img {
+            max-height: 1640px;
+            width: 100%;
+            padding: 40px 0;
+        }
+
+        .banner_text {
+            @extend .d_flex;
+            @extend .align_items_center;
+            position: absolute;
+            top: 248px;
+            left: 64px;
+
+            img {
+                width: 40px;
+                height: 100%;
+                padding: 0;
+                margin-right: 24px;
+            }
+
+            h4 {
+                font-weight: 400;
+                font-size: 16px;
+                color: #fff;
+            }
+        }
+
+        h6 {
+            position: absolute;
+            color: #fff;
+            top: 420px;
+            font-size: 48px;
+            font-weight: 500;
+            max-width: 294px;
+            left: 65px;
+        }
+    }
+}

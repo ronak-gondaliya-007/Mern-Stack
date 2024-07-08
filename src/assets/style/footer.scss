@@ -10,7 +10,7 @@ footer {
 
     .brand_inner {
         @extend .d_flex_column;
-        max-width: 217px;
+        max-width: 300px;
         width: 100%;
         gap: 24px;
 
@@ -35,7 +35,7 @@ footer {
                     background-color: transparent;
                     border: 1.5px solid #fff;
                     max-height: 48px;
-                    width: 217px;
+                    width: 300px;
                     height: 100%;
                     border-radius: 4px;
                     padding: 10px;
@@ -142,5 +142,19 @@ footer {
             @extend .justify_content_between;
             margin: 24px 0 0;
         }
+    }
+}
+
+.copyright {
+    @extend .d_flex;
+    @extend .justify_content_center;
+    padding: 24px 0;
+    opacity: 0.2;
+    img {
+        margin: 0 5px;
+    }
+
+    h5 {
+        font-weight: 300;
     }
 }
