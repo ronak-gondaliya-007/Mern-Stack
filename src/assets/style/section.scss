@@ -1,0 +1,238 @@
+// Section Header CSS
+.title {
+    @extend .d_flex;
+    @extend .align_items_center;
+    height: 40px;
+    margin-bottom: 24px;
+
+    .empty {
+        width: 20px;
+        height: 40px;
+        background-color: #DB4444;
+        border-radius: 5px;
+    }
+
+    h6 {
+        margin-left: 16px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #DB4444;
+    }
+}
+
+.subTitle {
+    @extend .d_flex;
+    @extend .align_items_center;
+    @extend .justify_content_between;
+    height: 50px;
+    margin-bottom: 24px;
+    padding-right: 33px;
+
+    h4 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .time_counter {
+        @extend .d_flex;
+        @extend .justify_content_between;
+        @extend .align_items_center;
+        max-width: 400px;
+        width: 100%;
+        margin-left: 87px;
+        gap: 20px;
+
+        div {
+            @extend .justify_content_center;
+            @extend .align_items_center;
+            width: 65px;
+
+            h6 {
+                font-size: 12px;
+                font-weight: 600;
+            }
+
+            .time {
+                @extend .d_flex;
+                @extend .justify_content_between;
+                @extend .align_items_center;
+                margin-right: 50px;
+
+                span {
+                    font-size: 32px;
+                    font-weight: 500;
+                }
+
+                p {
+                    font-weight: 900;
+                    color: #DB4444;
+                }
+            }
+        }
+    }
+
+    .view_all {
+        button {
+            position: relative;
+            color: #000;
+        }
+
+        button.shop_now_btn .circle {
+            background: #000;
+        }
+
+        button.shop_now_btn .circle .icon {
+            background: #000;
+        }
+
+        button.shop_now_btn .circle .icon.arrow {
+            color: #fff;
+        }
+
+        button.shop_now_btn .circle .icon.arrow::before {
+            border-top: 0.125rem solid #fff;
+            border-right: 0.125rem solid #fff;
+        }
+
+        button.shop_now_btn .button-text {
+            color: #000;
+        }
+
+        button:hover .circle .icon.arrow {
+            background: #fff;
+        }
+
+        button:hover .button-text {
+            color: #fff;
+        }
+    }
+}
+
+// Section Card CSS
+.product_card {
+    @extend .text_align_center;
+    box-sizing: border-box;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    cursor: pointer;
+    transition: all 0.5s;
+    user-select: none;
+    font-weight: bolder;
+    color: #000;
+    margin: 25px 25px;
+
+    .product_card_img {
+        max-width: -webkit-fill-available;
+        object-fit: none;
+        object-position: center top;
+        border-top-left-radius: 17px;
+        border-top-right-radius: 17px;
+    }
+
+    .product_card_detail {
+        @extend .d_block;
+        padding: 5px;
+
+        .product_card_title {
+            margin-bottom: 8px;
+        }
+
+        .product_card_price {
+            @extend .d_flex;
+            @extend .justify_content_center;
+            @extend .align_items_center;
+            gap: 8px;
+            margin-bottom: 8px;
+
+            .discount_price {
+                font-size: 16px;
+                color: #DB4444;
+            }
+
+            .total_price {
+                color: #7D8184;
+                opacity: 0.7;
+                font-size: 14px;
+                text-decoration: 1px solid line-through;
+            }
+        }
+    }
+}
+
+.product_card:hover {
+    border: 1px solid #DB4444;
+    transform: scale(1.05);
+}
+
+.product_card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.category_card {
+    @extend .text_align_center;
+    box-sizing: border-box;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    cursor: pointer;
+    transition: all 0.5s;
+    user-select: none;
+    font-weight: bolder;
+    color: #000;
+    margin: 25px 25px;
+    padding: 40px;
+
+    .category_card_img {
+        max-width: -webkit-fill-available;
+        object-fit: none;
+        object-position: center top;
+        border-top-left-radius: 17px;
+        border-top-right-radius: 17px;
+        margin-bottom: 15px;
+    }
+}
+
+.category_card:hover {
+    background-color: #DB4444;
+    transform: scale(1.05);
+    color: #fff;
+    .category_card_img {
+        filter: brightness(0) invert(1);
+    }
+}
+
+.category_card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+// Section CSS
+.section_container {
+    max-width: 100%;
+    padding: 80px 0;
+
+    .product_card_container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+// Section Rating CSS
+.product_card_rating {
+    @extend .d_flex;
+    @extend .justify_content_center;
+    @extend .align_items_center;
+    gap: 8px;
+    margin-bottom: 8px;
+
+    .total_rating {
+        font-size: 14px;
+        color: #7D8184;
+    }
+}

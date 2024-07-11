@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Gradient Search Bar</title>
+    <style>
+        .search-bar {
+            display: flex;
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(to right, #f00fd2, #1a1e22);
+            border-radius: 20px;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        .search-bar input {
+            background: none;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-size: 16px;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        .search-bar input::placeholder {
+            color: #aaa;
+        }
+
+        .search-bar button {
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: #fff;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar button i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search-bar flex w-full h-12 rounded-full bg-gradient-to-r from-indigo-800 to-gray-800 px-4">
+        <input type="text" placeholder="Search..."
+            class="bg-transparent outline-none text-white focus:placeholder-transparent">
+        <button type="button" class="flex items-center text-white">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+</body>
+
+</html>

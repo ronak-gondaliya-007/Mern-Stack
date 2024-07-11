@@ -1,43 +1,119 @@
 .home_inner {
-    @extend .d_flex;
-    @extend .justify_content_center;
-
     .hero_section {
-        img {
-            max-height: 1640px;
-            width: 100%;
-            padding: 40px 0;
+        @extend .d_flex;
+        @extend .justify_content_center;
+        @extend .align_items_center;
+        @extend .justify_content_start;
+        position: relative;
+        max-height: 1640px;
+        width: 100%;
+        overflow: hidden;
+
+        .banner_image {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
         }
 
-        .banner_text {
-            @extend .d_flex;
-            @extend .align_items_center;
+        .text_container {
             position: absolute;
-            top: 248px;
-            left: 64px;
+            left: 10%;
+            padding: 20px;
+            top: 20%;
+            max-width: 100%;
 
-            img {
-                width: 40px;
-                height: 100%;
-                padding: 0;
-                margin-right: 24px;
+            .banner_text {
+                @extend .d_flex;
+                @extend .align_items_center;
+
+                img {
+                    width: 60px;
+                    height: 100%;
+                    padding: 0;
+                    margin-right: 24px;
+                }
+
+                h4 {
+                    font-weight: 400;
+                    font-size: 26px;
+                    color: #fff;
+                }
             }
 
-            h4 {
-                font-weight: 400;
-                font-size: 16px;
+            .announcement {
+                background-color: transparent;
+
+                .announcement_text {
+                    max-width: 294px;
+                    color: #fff;
+                    font-size: 48px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .featured_section_container {
+        @extend .d_flex;
+        @extend .justify_content_center;
+        @extend .align_items_center;
+        width: 1640px;
+        height: 700px;
+        background-image: url('../image/featuredBannerImage.png');
+        background-size: contain;
+        margin-bottom: 80px;
+        flex-direction: initial;
+        gap: 480px;
+
+        .featured_product_detail {
+            h3 {
+                color: #00FF66;
+            }
+
+            p {
+                color: #fff;
+                font-size: 48px;
+                font-weight: 600;
+            }
+        }
+
+        .shop_now {
+            button {
+                position: relative;
+                color: #000;
+            }
+    
+            button.shop_now_btn .circle {
+                background: #000;
+            }
+    
+            button.shop_now_btn .circle .icon {
+                background: #000;
+            }
+    
+            button.shop_now_btn .circle .icon.arrow {
                 color: #fff;
             }
-        }
-
-        h6 {
-            position: absolute;
-            color: #fff;
-            top: 420px;
-            font-size: 48px;
-            font-weight: 500;
-            max-width: 294px;
-            left: 65px;
+    
+            button.shop_now_btn .circle .icon.arrow::before {
+                border-top: 0.125rem solid #fff;
+                border-right: 0.125rem solid #fff;
+            }
+    
+            button.shop_now_btn .button-text {
+                color: #000;
+            }
+    
+            button:hover .circle .icon.arrow {
+                background: #fff;
+            }
+            button:hover .circle .icon.arrow {
+                background: #fff;
+            }
+    
+            button:hover .button-text {
+                color: #fff;
+            }
         }
     }
 }
