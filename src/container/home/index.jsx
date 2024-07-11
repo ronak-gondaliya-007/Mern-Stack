@@ -4,6 +4,7 @@ import apple from '../../assets/image/apple.svg'
 import Button from '../../components/Button'
 import Section from '../../components/Section'
 import FeaturedSection from '../../components/FeaturedProduct'
+import NewArrivalSection from '../../components/NewArrival'
 
 const Home = () => {
     return (
@@ -28,26 +29,31 @@ const Home = () => {
                         subTitle='Flash Sales'
                         isTimer={1}
                         isProduct={1}
-                        />
+                    />
                     <Section
                         sectionName='Categories'
                         subTitle='Browse By Category'
                         isTimer={0}
                         isProduct={0}
-                        />
+                    />
                     <Section
                         sectionName='This Month'
                         subTitle='Best Selling Products'
                         isTimer={0}
                         isProduct={1}
-                        />
+                    />
+                    <FeaturedSection />
                     <Section
                         sectionName='Our Products'
                         subTitle='Explore Our Products'
                         isTimer={0}
                         isProduct={1}
                     />
-                    <FeaturedSection />
+                    <NewArrivalSection
+                        sectionName='Featured'
+                        subTitle='New Arrival'
+                        isTimer={0}
+                    />
                 </div>
             </div>
         </div>

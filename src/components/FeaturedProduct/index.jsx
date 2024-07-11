@@ -1,6 +1,5 @@
 import React from 'react';
 import featured from '../../assets/image/featured.svg';
-import CountdownTimer from '../Section/Header/Timer';
 import Button from '../Button';
 
 function FeaturedSection() {
