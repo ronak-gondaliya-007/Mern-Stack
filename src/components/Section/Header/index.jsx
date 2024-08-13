@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../../Button';
 import CountdownTimer from './Timer'
 
-function SectionHeader({ sectionName, subTitle, isTimer }) {
+function SectionHeader({ sectionName, subTitle, isTimer, button }) {
     console.log(sectionName, subTitle, isTimer);
     return (
         <>
@@ -15,9 +15,9 @@ function SectionHeader({ sectionName, subTitle, isTimer }) {
                 {isTimer > 0 && <div className="time_counter">
                     <CountdownTimer />
                 </div>}
-                <div className="view_all">
+                {button !== 0 && <div className="view_all">
                     <Button title='View All' />
-                </div>
+                </div>}
             </div>
         </>
     );

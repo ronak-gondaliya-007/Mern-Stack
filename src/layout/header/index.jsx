@@ -33,9 +33,20 @@ const HeaderLayout = ({ children }) => {
                                 <li className='menu_item' onClick={() => navigate('/')}>
                                     Home
                                 </li>
-                                <li className='menu_item' onClick={() => navigate('/category')}>
+                                <li className='menu_item category_item' onClick={() => navigate('/category')}>
                                     Category
                                     <img src={down} alt='dropdown_icon' />
+                                    <ul className="dropdown_menu">
+                                        <li className='dropdown_item' onClick={() => navigate('/category/item1')}>
+                                            Item 1
+                                        </li>
+                                        <li className='dropdown_item' onClick={() => navigate('/category/item2')}>
+                                            Item 2
+                                        </li>
+                                        <li className='dropdown_item' onClick={() => navigate('/category/item3')}>
+                                            Item 3
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li className='menu_item' onClick={() => navigate('/contact')}>
                                     Contact
@@ -64,7 +75,7 @@ const HeaderLayout = ({ children }) => {
                         </div>
                     </div>
                 </div>
-            </header>
+            </header >
             {children}
         </>
     )
